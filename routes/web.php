@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\TaskController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,5 +20,7 @@ Route::group(['middleware' => 'locale'], function() {
     Route::get('/', function () {
         return view('tasks');
     })->name('task');
+
+    Route::resource('tasks', TaskController::class);
     
 });

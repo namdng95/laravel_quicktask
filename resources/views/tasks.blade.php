@@ -9,7 +9,7 @@
         @include('common.errors')
 
         <!-- New Task Form -->
-        <form action="{{ route('task') }}" method="POST" class="form-horizontal">
+        <form action="{{ route('tasks.store') }}" method="POST" class="form-horizontal">
             {{ csrf_field() }}
 
             <!-- Task Name -->
