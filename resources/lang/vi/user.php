@@ -5,9 +5,10 @@ return [
     'title' => 'Laravel Quickstart - Cơ bản',
     'task' => [
         'name' => 'Công việc',
+        'header' => 'Công việc hiện tại',
         'create' => 'Thêm công việc',
         'error' => 'Rất tiếc! Đã xảy ra lỗi!',
-
+        'show' => 'Hiện tất cả Công việc',
     ],
     'language' => [
         'lang_vi' => 'Tiếng Việt',
@@ -21,5 +22,7 @@ return [
             'name_max255' => 'Độ dài tối đa của :attribute tính theo số kí tự là 255 kí tự'
         ],
     ],
-
+    'action' => [
+        'delete' => 'Xóa'
+    ]
 ];

@@ -15,7 +15,11 @@ class TaskController extends Controller
      */
     public function index()
     {
-        //
+        $tasks = Task::orderBy('created_at', 'asc')->get();
+
+        return view('tasks-index', [
+            'tasks' => $tasks
+        ]);
     }
 
     /**
@@ -25,7 +29,7 @@ class TaskController extends Controller
      */
     public function create()
     {
-        //
+        return view('tasks');
     }
 
     /**
@@ -85,7 +89,9 @@ class TaskController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $task = Task::destroy($id);
+
+        return redirect()->back();
     }
 
 }
