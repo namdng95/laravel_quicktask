@@ -6,12 +6,20 @@ return [
     'task' => [
         'name' => 'Công việc',
         'create' => 'Thêm công việc',
-        
+        'error' => 'Rất tiếc! Đã xảy ra lỗi!',
+
     ],
     'language' => [
         'lang_vi' => 'Tiếng Việt',
         'lang_en' => 'Tiếng Anh',
-
-    ]
+        
+    ],
+    "validation" => [
+        'task' => [
+            'name' => 'Công việc',
+            'name_required' => ':attribute không được bỏ trống!',
+            'name_max255' => 'Độ dài tối đa của :attribute tính theo số kí tự là 255 kí tự'
+        ],
+    ],
 
 ];
