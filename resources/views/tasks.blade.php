@@ -34,4 +34,6 @@
 
     <!-- TODO: Current Tasks -->
 
+    <button><a href="{{ route('tasks.index') }}">@lang('user.task.show')</a></button>
+
 @endsection
